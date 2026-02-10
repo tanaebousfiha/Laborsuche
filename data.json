@@ -1,0 +1,111 @@
+[
+  {
+    "id": "dexa-1",
+    "name": "Röntgenpraxis Georgstraße",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Georgstraße 16, 30159 Hannover",
+    "koordinaten": {
+      "lat": 52.373,
+      "lng": 9.736
+    },
+    "kontakt": "0511 123 717 0",
+    "website": "https://www.radiologie-nuklearmedizin-roentgenpraxis-hannover.de/kontakt/roentgenpraxis-georgstrasse/",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "nicht öffentlich"
+  },
+  {
+    "id": "dexa-2",
+    "name": "Orthopädie Zentrum Hannover",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Joachimstraße 1, 30159 Hannover",
+    "koordinaten": {
+      "lat": 52.4172,
+      "lng": 9.7565
+    },
+    "kontakt": "0511 700 520 70 / 0511 700 520 80",
+    "website": "https://www.orthopaedie-zentrum-hannover.de/",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "nicht öffentlich"
+  },
+  {
+    "id": "dexa-3",
+    "name": "OrthoCentrum Laatzen",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Würzburger Straße 13, 30880 Laatzen",
+    "koordinaten": {
+      "lat": 52.3168,
+      "lng": 9.8078
+    },
+    "kontakt": "0511 51 53 40 30",
+    "website": "https://www.toportho.de/knochendichtemessung-dexa-dxa-messung/",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich"
+  },
+  {
+    "id": "dexa-4",
+    "name": "Dr. med. Frank Oreschko & Claus Picard (Vahrenwalder Platz)",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Vahrenwalder Straße 71–75, 30165 Hannover",
+    "koordinaten": {
+      "lat": 52.39206,
+      "lng": 9.7344
+    },
+    "kontakt": "0511 3500307",
+    "website": "https://www.orthopaedie-hannover-vahrenwalder-platz.de/Knochendichtemessung/",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich"
+  },
+  {
+    "id": "dexa-5",
+    "name": "Dr. med. Frank Oreschko & Claus Picard (Südstadt)",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Hildesheimer Straße 102–104, 30173 Hannover",
+    "koordinaten": {
+      "lat": 52.3978,
+      "lng": 9.7335
+    },
+    "kontakt": "0511 808525",
+    "website": "https://orthopaedie-suedstadt-hannover.de/",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich"
+  },
+  {
+    "id": "blut-1",
+    "name": "Labor Dr. Wisplinghoff",
+    "kategorie": "Blutlabor",
+    "leistungen": [
+      "Blutbild",
+      "Stoffwechselparameter",
+      "Hormonanalysen"
+    ],
+    "adresse": "Lister Kirchweg 56, 30163 Hannover",
+    "koordinaten": {
+      "lat": 52.3957,
+      "lng": 9.7589
+    },
+    "kontakt": "0511 546 120",
+    "website": "https://www.wisplinghoff.de/",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "abhängig vom Parameter"
+  },
+  {
+    "id": "blut-2",
+    "name": "MVZ Medizinisches Labor Hannover GmbH",
+    "kategorie": "Blutlabor",
+    "leistungen": ["Blutuntersuchungen"],
+    "adresse": "Am TÜV 6, 30519 Hannover",
+    "koordinaten": {
+      "lat": 52.3341,
+      "lng": 9.7785
+    },
+    "kontakt": "+49 511 85622-0",
+    "website": "http://www.mlh.de/",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "abhängig vom Test"
+  }
+]
