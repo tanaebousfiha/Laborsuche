@@ -1,21 +1,16 @@
 import json
 import folium
+from folium import Element
 
 JSON_FILE = "data.json"
 OUT_FILE = "standorte_karte.html"
 
-# -----------------------
-# JSON laden
-# -----------------------
 with open(JSON_FILE, "r", encoding="utf-8") as f:
     standorte = json.load(f)
 
 if not standorte:
     raise SystemExit(" standorte.json ist leer.")
 
-# -----------------------
-# Mittelpunkt berechnen (aus koordinaten)
-# -----------------------
 lats = [s["koordinaten"]["lat"] for s in standorte]
 lngs = [s["koordinaten"]["lng"] for s in standorte]
 mean_lat = sum(lats) / len(lats)
@@ -23,15 +18,28 @@ mean_lng = sum(lngs) / len(lngs)
 
 karte = folium.Map(location=[mean_lat, mean_lng], zoom_start=11)
 
-# -----------------------
-# Layer für Filter (ein/aus)
-# -----------------------
+css = """
+<style>
+.leaflet-control-layers {
+    font-size: 18px;
+    min-width: 170px; /* optional: Box breiter */
+}
+.leaflet-control-layers label {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.leaflet-control-layers input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-right: 8px;
+}
+</style>
+"""
+karte.get_root().html.add_child(Element(css))
+
 layer_dexa = folium.FeatureGroup(name="DEXA")
 layer_blut = folium.FeatureGroup(name="Blutlabor")
 
-# -----------------------
-# Marker hinzufügen
-# -----------------------
 for s in standorte:
     lat = s["koordinaten"]["lat"]
     lng = s["koordinaten"]["lng"]
@@ -53,7 +61,6 @@ for s in standorte:
     if s.get("website"):
         popup_html += f"<a href='{s['website']}' target='_blank' rel='noreferrer'>Website</a>"
 
-    # Farben nach Kategorie
     kat = s.get("kategorie", "")
     color = "blue" if kat == "DEXA" else "red"
 
@@ -71,11 +78,8 @@ for s in standorte:
 layer_dexa.add_to(karte)
 layer_blut.add_to(karte)
 
-# Filter-Schalter
 folium.LayerControl(collapsed=False).add_to(karte)
 
-# Fit-to-bounds (automatisch auf alle Marker zoomen)
 karte.fit_bounds([[min(lats), min(lngs)], [max(lats), max(lngs)]])
-
 karte.save(OUT_FILE)
 print(f"Karte erstellt: {OUT_FILE}")
