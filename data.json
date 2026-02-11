@@ -5,10 +5,7 @@
     "kategorie": "DEXA",
     "leistungen": ["Knochendichtemessung"],
     "adresse": "Georgstraße 16, 30159 Hannover",
-    "koordinaten": {
-      "lat": 52.373,
-      "lng": 9.736
-    },
+    "koordinaten": { "lat": 52.373, "lng": 9.736 },
     "kontakt": "0511 123 717 0",
     "website": "https://www.radiologie-nuklearmedizin-roentgenpraxis-hannover.de/kontakt/roentgenpraxis-georgstrasse/",
     "selbstzahler_moeglich": true,
@@ -20,10 +17,7 @@
     "kategorie": "DEXA",
     "leistungen": ["Knochendichtemessung"],
     "adresse": "Joachimstraße 1, 30159 Hannover",
-    "koordinaten": {
-      "lat": 52.4172,
-      "lng": 9.7565
-    },
+    "koordinaten": { "lat": 52.4172, "lng": 9.7565 },
     "kontakt": "0511 700 520 70 / 0511 700 520 80",
     "website": "https://www.orthopaedie-zentrum-hannover.de/",
     "selbstzahler_moeglich": true,
@@ -35,10 +29,7 @@
     "kategorie": "DEXA",
     "leistungen": ["Knochendichtemessung"],
     "adresse": "Würzburger Straße 13, 30880 Laatzen",
-    "koordinaten": {
-      "lat": 52.3168,
-      "lng": 9.8078
-    },
+    "koordinaten": { "lat": 52.3168, "lng": 9.8078 },
     "kontakt": "0511 51 53 40 30",
     "website": "https://www.toportho.de/knochendichtemessung-dexa-dxa-messung/",
     "selbstzahler_moeglich": null,
@@ -50,10 +41,7 @@
     "kategorie": "DEXA",
     "leistungen": ["Knochendichtemessung"],
     "adresse": "Vahrenwalder Straße 71–75, 30165 Hannover",
-    "koordinaten": {
-      "lat": 52.39206,
-      "lng": 9.7344
-    },
+    "koordinaten": { "lat": 52.39206, "lng": 9.7344 },
     "kontakt": "0511 3500307",
     "website": "https://www.orthopaedie-hannover-vahrenwalder-platz.de/Knochendichtemessung/",
     "selbstzahler_moeglich": null,
@@ -65,10 +53,7 @@
     "kategorie": "DEXA",
     "leistungen": ["Knochendichtemessung"],
     "adresse": "Hildesheimer Straße 102–104, 30173 Hannover",
-    "koordinaten": {
-      "lat": 52.3978,
-      "lng": 9.7335
-    },
+    "koordinaten": { "lat": 52.3978, "lng": 9.7335 },
     "kontakt": "0511 808525",
     "website": "https://orthopaedie-suedstadt-hannover.de/",
     "selbstzahler_moeglich": null,
@@ -78,16 +63,9 @@
     "id": "blut-1",
     "name": "Labor Dr. Wisplinghoff",
     "kategorie": "Blutlabor",
-    "leistungen": [
-      "Blutbild",
-      "Stoffwechselparameter",
-      "Hormonanalysen"
-    ],
+    "leistungen": ["Blutbild", "Stoffwechselparameter", "Hormonanalysen"],
     "adresse": "Lister Kirchweg 56, 30163 Hannover",
-    "koordinaten": {
-      "lat": 52.3957,
-      "lng": 9.7589
-    },
+    "koordinaten": { "lat": 52.3957, "lng": 9.7589 },
     "kontakt": "0511 546 120",
     "website": "https://www.wisplinghoff.de/",
     "selbstzahler_moeglich": true,
@@ -99,13 +77,147 @@
     "kategorie": "Blutlabor",
     "leistungen": ["Blutuntersuchungen"],
     "adresse": "Am TÜV 6, 30519 Hannover",
-    "koordinaten": {
-      "lat": 52.3341,
-      "lng": 9.7785
-    },
+    "koordinaten": { "lat": 52.3341, "lng": 9.7785 },
     "kontakt": "+49 511 85622-0",
     "website": "http://www.mlh.de/",
     "selbstzahler_moeglich": true,
     "preisinfo": "abhängig vom Test"
+  },
+  {
+    "id": "dexa-6",
+    "name": "Klinik für Endokrinologie, Diabetologie und Stoffwechsel Universitätsklinikum Essen",
+    "kategorie": "DEXA",
+    "leistungen": ["Body Composition", "Knochendichtemessung"],
+    "adresse": "Hufelandstraße 55, 45147 Essen",
+    "koordinaten": { "lat": 51.43613, "lng": 6.98952 },
+    "kontakt": "+49 201 723-6303",
+    "website": "https://endokrinologie.de/knochendichtemessung/",
+    "selbstzahler_moeglich": false,
+    "preisinfo": "nicht öffentlich"
+  },
+  {
+    "id": "dexa-7",
+    "name": "Praxis für Endokrinologie",
+    "kategorie": "DEXA",
+    "leistungen": ["Body Composition"],
+    "adresse": "Karolinenstraße 1, 90402 Nürnberg",
+    "koordinaten": { "lat": 49.450775, "lng": 11.077334 },
+    "kontakt": "(09 11) 23 605 0",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich"
+  },
+  {
+    "id": "dexa-8",
+    "name": "Orthopädie em Veede",
+    "kategorie": "DEXA",
+    "leistungen": ["Body Composition", "Knochendichtemessung"],
+    "adresse": "Dürener Straße 199–203, 50931 Köln",
+    "koordinaten": { "lat": 50.9485, "lng": 6.9084 },
+    "kontakt": "0221 95587659",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich"
+  },
+  {
+    "id": "dexa-9",
+    "name": "Charité – Universitätsmedizin Berlin",
+    "kategorie": "DEXA",
+    "leistungen": ["Body Composition"],
+    "adresse": "Charitéplatz 1, 10117 Berlin",
+    "koordinaten": { "lat": 52.52364, "lng": 13.37821 },
+    "kontakt": "030 45050",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich (Hinweis: „nein mit ärztlicher Überweisung“)"
+  },
+  {
+    "id": "dexa-10",
+    "name": "MEDI-MANAGE",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Göttelmannstraße 48, 55131 Mainz",
+    "koordinaten": { "lat": 49.993, "lng": 8.2473 },
+    "kontakt": "06131 588870",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich"
+  },
+  {
+    "id": "dexa-11",
+    "name": "Radiologie Ettlingen",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Wilhelmstraße 1, 76275 Ettlingen",
+    "koordinaten": { "lat": 48.9432, "lng": 8.398 },
+    "kontakt": "07243 14240",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "55 EURO"
+  },
+
+  {
+    "id": "dexa-12",
+    "name": "Universitätsmedizin Göttingen Institut für Klinische und Interventionelle Radiologie",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Robert-Koch-Straße 40 37075 Göttingen",
+    "koordinaten": { "lat": 51.5396, "lng": 9.9357 },
+    "kontakt": "0551 3960300",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich "
+  },
+    {
+    "id": "dexa-13",
+    "name": "Dr. med. Matthias Keese, Facharzt für Orthopädie Osteologe DVO",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Volgerstr. 4 • 21335 Lüneburg",
+    "koordinaten": { "lat": 53.2501, "lng": 10.4176 },
+    "kontakt": "0 41 31 - 4 13 77",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich "
+  },
+    {
+    "id": "dexa-14",
+    "name": "Praxis Minden",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung","Body Composition"],
+    "adresse": "Marienstraße 28/28a 32427 Minden",
+    "koordinaten": { "lat": 52.2895, "lng": 8.9146 },
+    "kontakt": "0571 - 83 777-0",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich "
+  },
+    {
+    "id": "dexa-15",
+    "name": "AGAPLESION DIAKONIEKLINIKUM ROTENBURG gGmbH ",
+    "kategorie": "DEXA",
+    "leistungen": ["Body Composition"],
+    "adresse": "Elise-Averdieck-Straße 17, 27356 Rotenburg (Wümme)",
+    "koordinaten": { "lat": 53.1052, "lng": 9.4134 },
+    "kontakt": "04261 770",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "40 EURO "
+  },
+
+      {
+    "id": "dexa-16",
+    "name": "Dr. med. Georg P. Dahmen, Facharzt für Orthopädie",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Tangstedter Landstrasse 77, 22415 Hamburg-Langenhorn",
+    "koordinaten": { "lat": 53.6486, "lng": 10.0085 },
+    "kontakt": "+49 40 53300630",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich"
+  },
+
+  {
+    "id": "dexa-17",
+    "name": "University Medical Center Hamburg-Eppendorf",
+    "kategorie": "DEXA",
+    "leistungen": ["Knochendichtemessung"],
+    "adresse": "Martinistraße 52, 20251 Hamburg",
+    "koordinaten": { "lat": 53.5904, "lng": 9.9744 },
+    "kontakt": "+49 (0) 40 7410 - 0",
+    "selbstzahler_moeglich": null,
+    "preisinfo": "nicht öffentlich"
   }
+
 ]
