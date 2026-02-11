@@ -6,8 +6,8 @@
     "leistungen": ["Knochendichtemessung"],
     "adresse": "Georgstraße 16, 30159 Hannover",
     "koordinaten": { "lat": 52.373, "lng": 9.736 },
-    "kontakt": "0511 123 717 0",
-    "website": "https://www.radiologie-nuklearmedizin-roentgenpraxis-hannover.de/kontakt/roentgenpraxis-georgstrasse/",
+    "kontakt": "0511 1237170",
+    "website": "https://www.radiologie-nuklearmedizin-roentgenpraxis-hannover.de/",
     "selbstzahler_moeglich": true,
     "preisinfo": "nicht öffentlich"
   },
@@ -30,7 +30,7 @@
     "leistungen": ["Knochendichtemessung"],
     "adresse": "Würzburger Straße 13, 30880 Laatzen",
     "koordinaten": { "lat": 52.3168, "lng": 9.8078 },
-    "kontakt": "0511 51 53 40 30",
+    "kontakt": "0511 / 51 53 40 30",
     "website": "https://www.toportho.de/knochendichtemessung-dexa-dxa-messung/",
     "selbstzahler_moeglich": null,
     "preisinfo": "nicht öffentlich"
@@ -59,18 +59,7 @@
     "selbstzahler_moeglich": null,
     "preisinfo": "nicht öffentlich"
   },
-  {
-    "id": "blut-1",
-    "name": "Labor Dr. Wisplinghoff",
-    "kategorie": "Blutlabor",
-    "leistungen": ["Blutbild", "Stoffwechselparameter", "Hormonanalysen"],
-    "adresse": "Lister Kirchweg 56, 30163 Hannover",
-    "koordinaten": { "lat": 52.3957, "lng": 9.7589 },
-    "kontakt": "0511 546 120",
-    "website": "https://www.wisplinghoff.de/",
-    "selbstzahler_moeglich": true,
-    "preisinfo": "abhängig vom Parameter"
-  },
+
   {
     "id": "blut-2",
     "name": "MVZ Medizinisches Labor Hannover GmbH",
@@ -79,7 +68,7 @@
     "adresse": "Am TÜV 6, 30519 Hannover",
     "koordinaten": { "lat": 52.3341, "lng": 9.7785 },
     "kontakt": "+49 511 85622-0",
-    "website": "http://www.mlh.de/",
+    "website": "https://www.labor-limbach-hannover.de/",
     "selbstzahler_moeglich": true,
     "preisinfo": "abhängig vom Test"
   },
@@ -103,6 +92,7 @@
     "adresse": "Karolinenstraße 1, 90402 Nürnberg",
     "koordinaten": { "lat": 49.450775, "lng": 11.077334 },
     "kontakt": "(09 11) 23 605 0",
+    "website":"https://hormone-nbg.de/",
     "selbstzahler_moeglich": null,
     "preisinfo": "nicht öffentlich"
   },
@@ -114,6 +104,7 @@
     "adresse": "Dürener Straße 199–203, 50931 Köln",
     "koordinaten": { "lat": 50.9485, "lng": 6.9084 },
     "kontakt": "0221 95587659",
+    "website":"https://orthopaedie-em-veedel.de/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
     "selbstzahler_moeglich": null,
     "preisinfo": "nicht öffentlich"
   },
@@ -125,6 +116,7 @@
     "adresse": "Charitéplatz 1, 10117 Berlin",
     "koordinaten": { "lat": 52.52364, "lng": 13.37821 },
     "kontakt": "030 45050",
+    "website":"https://karriere.charite.de/",
     "selbstzahler_moeglich": null,
     "preisinfo": "nicht öffentlich (Hinweis: „nein mit ärztlicher Überweisung“)"
   },
@@ -137,6 +129,7 @@
     "koordinaten": { "lat": 49.993, "lng": 8.2473 },
     "kontakt": "06131 588870",
     "selbstzahler_moeglich": null,
+    "website":"https://www.medi-manage.de/",
     "preisinfo": "nicht öffentlich"
   },
   {
@@ -147,6 +140,7 @@
     "adresse": "Wilhelmstraße 1, 76275 Ettlingen",
     "koordinaten": { "lat": 48.9432, "lng": 8.398 },
     "kontakt": "07243 14240",
+    "website":"https://radiologie-ettlingen.de/",
     "selbstzahler_moeglich": null,
     "preisinfo": "55 EURO"
   },
@@ -159,6 +153,7 @@
     "adresse": "Robert-Koch-Straße 40 37075 Göttingen",
     "koordinaten": { "lat": 51.5396, "lng": 9.9357 },
     "kontakt": "0551 3960300",
+    "website":"https://radiologie.umg.eu/",
     "selbstzahler_moeglich": null,
     "preisinfo": "nicht öffentlich "
   },
@@ -170,6 +165,7 @@
     "adresse": "Volgerstr. 4 • 21335 Lüneburg",
     "koordinaten": { "lat": 53.2501, "lng": 10.4176 },
     "kontakt": "0 41 31 - 4 13 77",
+    "website":"https://orthopaedie-dr-keese.de/",
     "selbstzahler_moeglich": null,
     "preisinfo": "nicht öffentlich "
   },
@@ -181,6 +177,7 @@
     "adresse": "Marienstraße 28/28a 32427 Minden",
     "koordinaten": { "lat": 52.2895, "lng": 8.9146 },
     "kontakt": "0571 - 83 777-0",
+    "website":"https://www.radiologieteam-minden.de/",
     "selbstzahler_moeglich": null,
     "preisinfo": "nicht öffentlich "
   },
@@ -192,6 +189,7 @@
     "adresse": "Elise-Averdieck-Straße 17, 27356 Rotenburg (Wümme)",
     "koordinaten": { "lat": 53.1052, "lng": 9.4134 },
     "kontakt": "04261 770",
+    "website":"https://www.diako-online.de/start",
     "selbstzahler_moeglich": true,
     "preisinfo": "40 EURO "
   },
@@ -202,6 +200,7 @@
     "kategorie": "DEXA",
     "leistungen": ["Knochendichtemessung"],
     "adresse": "Tangstedter Landstrasse 77, 22415 Hamburg-Langenhorn",
+    "website":"https://orthopaedie-langenhorn.de/",
     "koordinaten": { "lat": 53.6486, "lng": 10.0085 },
     "kontakt": "+49 40 53300630",
     "selbstzahler_moeglich": null,
@@ -216,8 +215,155 @@
     "adresse": "Martinistraße 52, 20251 Hamburg",
     "koordinaten": { "lat": 53.5904, "lng": 9.9744 },
     "kontakt": "+49 (0) 40 7410 - 0",
+    "website":"https://www.uke.de/index.html",
     "selbstzahler_moeglich": null,
     "preisinfo": "nicht öffentlich"
-  }
+  },
+
+    {
+    "id": "blut-3",
+    "name": "MVZ Göttingen",
+    "kategorie": "Blutlabor",
+    "leistungen": ["Blutuntersuchungen"],
+    "adresse": "Kasseler Landstraße 25a 37081 Göttingen",
+    "koordinaten": { "lat": 51.5322, "lng": 9.9025 },
+    "kontakt": "0551 99 888 55 ,  0551 99 888 62",
+    "website":"https://www.mvz-goettingen.de/",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "nicht öffentlich"
+  },
+
+    {
+    "id": "blut-4",
+    "name": "MVZ Northeim",
+    "kategorie": "Blutlabor",
+    "leistungen": ["Blutuntersuchungen"],
+    "adresse": "Sturmbäume 3 37154 Northeim",
+    "koordinaten": { "lat": 51.7002, "lng": 9.9959 },
+    "kontakt": "05551 8595",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "nicht öffentlich"
+  },
+
+    {
+    "id": "blut-5",
+    "name": "MVZ Osterode",
+    "kategorie": "Blutlabor",
+    "leistungen": ["Blutuntersuchungen"],
+    "adresse": "Bahnhofstraße 2 37520 Osterode am Harz",
+    "koordinaten": { "lat": 51.72868, "lng": 10.24812 },
+    "kontakt": "05522 3444",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "nicht öffentlich"
+  },
+
+{
+    "id": "blut-6",
+    "name": "MVZ Urslar",
+    "kategorie": "Blutlabor",
+    "leistungen": ["Blutuntersuchungen"],
+    "adresse": "Eichhagen 2–4 37170 Uslar",
+    "koordinaten": { "lat": 51.6597, "lng": 9.6385 },
+    "kontakt": "05571 8019977",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "nicht öffentlich"
+  },
+{
+    "id": "blut-7",
+    "name": "MVZ wagnerstibbe (amedes)",
+    "kategorie": "Blutlabor",
+    "leistungen": ["Blutuntersuchungen"],
+    "adresse": "Georgstraße 50 30159 Hannover",
+    "koordinaten": { "lat": 52.3759, "lng": 9.7320 },
+    "kontakt": "0511 30 17 95 0,  0511 30 17 95 119",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "nicht öffentlich"
+  },
+
+{
+    "id": "blut-8",
+    "name": "MVZ Institut für Labormedizin und Klinische Genetik (amedes)",
+    "kategorie": "Blutlabor",
+    "leistungen": ["Blutuntersuchungen"],
+    "adresse": "Rhein/Ruhr GmbH Willy-Brandt-Platz 4 45127 Essen",
+    "koordinaten": { "lat":51.4522 , "lng": 7.0126 },
+    "kontakt": "0201 74 77 60, 0201 74 77 690",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "nicht öffentlich"
+  },
+  
+{
+    "id": "blut-9",
+    "name": "amedes MVZ für Laboratoriums-diagnostik und Mikrobiologie Halle/Leipzig GmbH",
+    "kategorie": "Blutlabor",
+    "leistungen": ["Blutuntersuchungen"],
+    "adresse": "Leipziger Chaussee 191f 06112 Halle",
+    "koordinaten": { "lat":51.4960 , "lng":  11.9920},
+    "kontakt": " 0345 445 07 100, 0345 445 07 210",
+    "selbstzahler_moeglich": true,
+    "preisinfo": "nicht öffentlich"
+  },
+  
+{
+  "id": "blut-10",
+  "name": "Labor Berlin – Charité Vivantes GmbH",
+  "kategorie": "Blutlabor",
+  "leistungen": ["Blutuntersuchungen", "Labordiagnostik"],
+  "adresse": "Sylter Straße 2, 13353 Berlin",
+  "koordinaten": { "lat": 52.5413, "lng": 13.3572 },
+  "kontakt": "+49 30 40502600",
+  "website": "https://www.laborberlin.com/",
+  "selbstzahler_moeglich": true,
+  "preisinfo": "abhängig vom Test"
+},
+{
+  "id": "blut-11",
+  "name": "Labor Staber München (Mein Direktlabor)",
+  "kategorie": "Blutlabor",
+  "leistungen": ["Blutuntersuchungen für Selbstzahler"],
+  "adresse": "Auenstraße 6, 80469 München",
+  "koordinaten": { "lat": 48.1296, "lng": 11.5711 },
+  "kontakt": "+49 89 54401-0",
+  "website": "https://www.labor-staber.de/",
+  "selbstzahler_moeglich": true,
+  "preisinfo": "abhängig vom Test"
+},
+{
+  "id": "blut-12",
+  "name": "Medizinische Laboratorien Düsseldorf (Mein Direktlabor)",
+  "kategorie": "Blutlabor",
+  "leistungen": ["Blutuntersuchungen für Selbstzahler"],
+  "adresse": "Hans-Günther-Sohl-Straße 8, 40235 Düsseldorf",
+  "koordinaten": { "lat": 51.2335, "lng": 6.8286 },
+  "kontakt": "+49 211 96660",
+  "website": "https://www.meindirektlabor.de/",
+  "selbstzahler_moeglich": true,
+  "preisinfo": "abhängig vom Test"
+},
+{
+  "id": "blut-13",
+  "name": "Bioscientia Labor Mainz (Mein Direktlabor)",
+  "kategorie": "Blutlabor",
+  "leistungen": ["Blutuntersuchungen für Selbstzahler"],
+  "adresse": "Konrad-Adenauer-Straße 17, 55129 Mainz",
+  "koordinaten": { "lat": 49.9693, "lng": 8.2841 },
+  "kontakt": "+49 6131 72050",
+  "website": "https://www.bioscientia.de/",
+  "selbstzahler_moeglich": true,
+  "preisinfo": "abhängig vom Test"
+},
+{
+  "id": "blut-14",
+  "name": "Labor Nord – Direktlabor Hamburg-Ochsenzoll",
+  "kategorie": "Blutlabor",
+  "leistungen": ["Blutuntersuchungen", "Direktlabor-Service"],
+  "adresse": "Langenhorner Chaussee 369, 22419 Hamburg",
+  "koordinaten": { "lat": 53.6478, "lng": 10.0082 },
+  "kontakt": "+49 40 5377-0",
+  "website": "https://www.mln.de/",
+  "selbstzahler_moeglich": true,
+  "preisinfo": "abhängig vom Test"
+}
+
 
 ]
