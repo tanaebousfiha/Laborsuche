@@ -58,48 +58,67 @@ Diese enthält eine vollständig interaktive und filterbare Standortkarte.
 
 Das gesamte Projekt (inkl. Python-Skript, Abhängigkeiten und Datenverarbeitung) ist in einem Docker-Image gekapselt.
 Das Image wurde getaggt und in Docker Hub gepusht, damit es überall verwendet werden kann.
+
  4.1 Pull the image :
  docker pull tanaebou/laboresuchedach:latest
+
  4.2 Run the container and generate the map:
+
  Linux / macOS : docker run --rm -v "$(pwd)":/app tanaebou/laboresuchedach:latest
+
  Windows PowerShell : docker run --rm -v "${PWD}:/app" tanaebou/laboresuchedach:latest
+
  4.3 Nach dem Lauf wird die Datei: standorte_karte.html
+ 
 
 
-5. 3) Open the map
+5. Open the map
 
-Öffne standorte_karte.html einfach im Browser (Doppelklick reicht).
-
-
+Öffne standorte_karte.html einfach im Browser.
 
 
+6. Designentscheidungen
+
+Verzicht auf Google-API aufgrund der hohen Kosten
+
+Kombination aus Scraping und manueller Recherche, um Datenqualität zu sichern
+
+Implementierung einer Duplikaterkennung, um redundante Standorte zu vermeiden
+
+Verwendung von Folium, da es eine einfache Integration in Python erlaubt
+
+Dockerisierung, um reproduzierbare und plattformunabhängige Ausführung sicherzustellen
 
 
+7. Was ich bei mehr Zeit noch verbessern würde:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Integration einer Suchfunktion für eine noch bessere Nutzerinteraktion.
+Vollautomatisiertes, nachhaltiges Data-Scraping.
+Erweiterung um weitere Filterfunktionen, z. B. nach Leistungsangeboten oder Öffnungszeiten.
 
 
 
 
- Wie man das Projekt lokal startet
-  - Welche Entscheidungen du getroffen hast und warum
-  - Was du bei mehr Zeit noch machen würdest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
