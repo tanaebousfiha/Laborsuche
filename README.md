@@ -1,107 +1,135 @@
 Laborsuche DACH – Interaktive Karte für Gesundheitsanbieter
 
+Dieses Projekt ist eine interaktive Webkarte, die Anbieter für DEXA-Body-Composition-Messungen, Knochendichtemessungen und Blutuntersuchungen visualisiert.
+Die Karte zeigt Standorte, Details und Kontaktinformationen der Anbieter, um Nutzerinnen und Nutzern bei der Suche nach passenden Gesundheitsdienstleistungen zu helfen.
 
-Dieses Projekt ist eine interaktive Webkarte, die Anbieter für DEXA-Body-Composition-, Knochenmessungen und Blutuntersuchungen visualisiert. Die Karte zeigt die Standorte, Details und Kontaktinformationen der Anbieter, um Nutzerinnen und Nutzern bei der Suche nach passenden Gesundheitsdienstleistungen zu helfen.
+Data Extraction
 
-1. Data extraction:
+Zur Datenextraktion war ursprünglich die Nutzung der Google-REST-API geplant.
+Da die Verwendung der Google-API jedoch mit Kosten von etwa 300 $ verbunden ist, wurde diese Methode zunächst nicht weiterverfolgt. Eine alternative Scraping-Methode oder ein geeignetes Tool soll künftig noch recherchiert werden.
 
-- Um die Daten zu extrahieren, sollte man zunächst die REST-API-Methode verwenden. Allerdings kostet die Nutzung der API von Google etwa 300 $, weshalb ich diese Methode bisher vermieden habe.
-Ich werde demnächst nach einer Scraping-Methode oder einem Tool recherchieren.
+Nach der Evaluation mehrerer (teilweise kostenpflichtiger) Anbieter wurde schließlich Instant Data Scraper verwendet, um effizient möglichst viele Informationen zu extrahieren.
 
-Ich habe mehrere Anbieter gefunden, die allerdings nicht kostenlos sind. Letztendlich habe ich den Instant Data Scraper verwendet, um Zeit zu sparen und möglichst viele Informationen zu erhalten.
-- Da es nicht realistisch ist, alle Informationen ausschließlich mit einem Scraper-Tool zu sammeln, habe ich weiterhin manuell nach den benötigten Daten gesucht.
-- Die Informationen habe ich in "data.json" gespeichert (also die gesammelten Daten).
+Da es nicht realistisch ist, sämtliche benötigten Informationen ausschließlich mit einem Scraping-Tool zu erfassen, wurden ergänzend manuelle Recherchen durchgeführt.
 
+Die gesammelten Daten wurden in folgender Datei gespeichert:
 
-2. Karte script: (data.py)
+data.json
 
-- Dieses Python-Skript übernimmt die vollständige Verarbeitung der gesammelten Standortdaten aus data.json und erzeugt daraus eine interaktive HTML-Karte (standorte_karte.html) mit Filter- und Cluster-Funktionalität.
+Kartenskript (data.py)
 
-2.1 Duplikaterkennung (Qualitätssicherung):
-Geografische Distanz:
-  -Berechnung mittels Haversine-Formel
-  -Namensähnlichkeit: Vergleich mittels SequenceMatcher
+Das Python-Skript übernimmt die vollständige Verarbeitung der gesammelten Standortdaten aus data.json und erzeugt daraus eine interaktive HTML-Karte:
+
+standorte_karte.html
 
 
-2.3  Kartengenerierung (mit Folium)
+Die Karte enthält Filter- und Cluster-Funktionalitäten.
+
+2.1 Duplikaterkennung (Qualitätssicherung)
+
+Zur Verbesserung der Datenqualität wurde eine Duplikaterkennung implementiert:
+
+Geografische Distanz: Berechnung mittels Haversine-Formel
+
+Namensähnlichkeit: Vergleich mittels SequenceMatcher
+
+2.2 Kartengenerierung (mit Folium)
+
+Die Kartenerstellung erfolgt mit der Python-Bibliothek Folium.
+
 Automatische Mittelpunkt-Berechnung:
-Mittels fit_bounds(), um alle Standorte optimal darzustellen
+Nutzung von fit_bounds(), um alle Standorte optimal darzustellen.
 
-2.4 MarkerCluster:
-Zur Gruppierung nahegelegener Standorte
+2.3 MarkerCluster
 
-    
+Nahegelegene Standorte werden mithilfe von MarkerCluster gruppiert, um die Übersichtlichkeit zu erhöhen.
+
 Farbcodierung:
 
-      Blau: DEXA
-      
-      Rot: Blutlabor
+Blau → DEXA
 
-Popup-Informationen:
+Rot → Blutlabor
+
+Popup-Informationen
+
+Jeder Marker enthält folgende Informationen:
+
 Name
+
 Kategorie
+
 Adresse
+
 Leistungen
+
 Kontakt
+
 Selbstzahler-Status
-Preisinfo
+
+Preisinformationen
+
 Website
 
-2.5 Automatische Kartenausrichtung
+Automatische Kartenausrichtung
 
-Am Ende wird fit_bounds() genutzt, um die Karte automatisch auf alle Marker zu zoomen.
+Am Ende des Skripts wird erneut fit_bounds() verwendet, um die Karte automatisch auf alle Marker zu zoomen.
 
-3.  Output
+Output
 
-Das Skript erzeugt die Datei:
+Das Skript erzeugt folgende Datei:
+
 standorte_karte.html
+
+
 Diese enthält eine vollständig interaktive und filterbare Standortkarte.
 
-4. Docker Setup
+Docker Setup
 
 Das gesamte Projekt (inkl. Python-Skript, Abhängigkeiten und Datenverarbeitung) ist in einem Docker-Image gekapselt.
-Das Image wurde getaggt und in Docker Hub gepusht, damit es überall verwendet werden kann.
+Das Image wurde getaggt und in Docker Hub veröffentlicht, sodass es plattformunabhängig verwendet werden kann.
 
- 4.1 Pull the image :
- docker pull tanaebou/laboresuchedach:latest
+4.1 Image herunterladen
+docker pull tanaebou/laboresuchedach:latest
 
- 4.2 Run the container and generate the map:
+4.2 Container ausführen und Karte generieren
 
- Linux / macOS : docker run --rm -v "$(pwd)":/app tanaebou/laboresuchedach:latest
+Linux / macOS
 
- Windows PowerShell : docker run --rm -v "${PWD}:/app" tanaebou/laboresuchedach:latest
-
- 4.3 Nach dem Lauf wird die Datei: standorte_karte.html
+docker run --rm -v "$(pwd)":/app tanaebou/laboresuchedach:latest
 
 
+Windows PowerShell
 
-5. Open the map
-
-Öffne standorte_karte.html einfach im Browser.
+docker run --rm -v "${PWD}:/app" tanaebou/laboresuchedach:latest
 
 
-6. Designentscheidungen
+Nach der Ausführung wird automatisch die Datei standorte_karte.html erzeugt.
+
+Karte öffnen
+
+Öffne die Datei standorte_karte.html einfach im Browser.
+
+Designentscheidungen
 
 Verzicht auf Google-API aufgrund der hohen Kosten
 
-Kombination aus Scraping und manueller Recherche, um Datenqualität zu sichern
+Kombination aus Scraping und manueller Recherche zur Sicherstellung der Datenqualität
 
-Implementierung einer Duplikaterkennung, um redundante Standorte zu vermeiden
+Implementierung einer Duplikaterkennung zur Vermeidung redundanter Standorte
 
-Verwendung von Folium, da es eine einfache Integration in Python erlaubt
+Verwendung von Folium aufgrund der einfachen Integration in Python
 
-Dockerisierung, um reproduzierbare und plattformunabhängige Ausführung sicherzustellen
+Dockerisierung zur reproduzierbaren und plattformunabhängigen Ausführung
 
+Geplante Verbesserungen
 
-7. Was ich bei mehr Zeit noch verbessern würde:
+Bei mehr Zeit würde ich folgende Erweiterungen umsetzen:
 
-Integration einer Suchfunktion für eine noch bessere Nutzerinteraktion.
+Integration einer Suchfunktion für eine verbesserte Nutzerinteraktion
 
-Vollautomatisiertes, nachhaltiges Data-Scraping.
+Vollautomatisiertes und nachhaltiges Data-Scraping
 
-Erweiterung um weitere Filterfunktionen, z. B. nach Leistungsangeboten oder Öffnungszeiten.
-
-
+Erweiterung um zusätzliche Filterfunktionen (z. B. nach Leistungsangeboten oder Öffnungszeiten)
 
 
 
