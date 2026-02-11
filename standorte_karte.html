@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ca021805274b783c11766dce5f04bb13 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+<style>
+.leaflet-control-layers {
+    font-size: 18px;
+    min-width: 200px;
+}
+.leaflet-control-layers label {
+    font-size: 18px;
+    font-weight: 700;
+}
+.leaflet-control-layers input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-right: 8px;
+}
+</style>
+    
+            <div class="folium-map" id="map_ca021805274b783c11766dce5f04bb13" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ca021805274b783c11766dce5f04bb13 = L.map(
+                "map_ca021805274b783c11766dce5f04bb13",
+                {
+                    center: [51.8757794, 9.62925136],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e891abc8688ecece066c57597158b7f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3e891abc8688ecece066c57597158b7f.addTo(map_ca021805274b783c11766dce5f04bb13);
+        
+    
+            var marker_cluster_b72c1af13b2ae145e23030b1195fe6a1 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_314a37c1134b83ff8c0937c2b41f2113 = L.marker(
+                [52.373, 9.736],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_d7e8539316078c9ed96ce5a615c271e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53c71e0ad496f5ff3114c70af3369403 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d9189022c18e825f62bc5676d8583329 = $(`<div id="html_d9189022c18e825f62bc5676d8583329" style="width: 100.0%; height: 100.0%;">     <b>Röntgenpraxis Georgstraße</b><br>     Kategorie: DEXA<br>     Adresse: Georgstraße 16, 30159 Hannover<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 1237170<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.radiologie-nuklearmedizin-roentgenpraxis-hannover.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_53c71e0ad496f5ff3114c70af3369403.setContent(html_d9189022c18e825f62bc5676d8583329);
+            
+        
+
+        marker_314a37c1134b83ff8c0937c2b41f2113.bindPopup(popup_53c71e0ad496f5ff3114c70af3369403)
+        ;
+
+        
+    
+    
+                marker_314a37c1134b83ff8c0937c2b41f2113.setIcon(icon_d7e8539316078c9ed96ce5a615c271e6);
+            
+    
+            var marker_dba8f08b667da071aa7f05ff482bfda2 = L.marker(
+                [52.4172, 9.7565],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_8f577d23954d99deeba47cf55cec51af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f42575a0efc932c6619239e127e5a18a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_68196595e4fcdf4a5ce98e9a07ea9bc3 = $(`<div id="html_68196595e4fcdf4a5ce98e9a07ea9bc3" style="width: 100.0%; height: 100.0%;">     <b>Orthopädie Zentrum Hannover</b><br>     Kategorie: DEXA<br>     Adresse: Joachimstraße 1, 30159 Hannover<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 700 520 70 / 0511 700 520 80<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.orthopaedie-zentrum-hannover.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_f42575a0efc932c6619239e127e5a18a.setContent(html_68196595e4fcdf4a5ce98e9a07ea9bc3);
+            
+        
+
+        marker_dba8f08b667da071aa7f05ff482bfda2.bindPopup(popup_f42575a0efc932c6619239e127e5a18a)
+        ;
+
+        
+    
+    
+                marker_dba8f08b667da071aa7f05ff482bfda2.setIcon(icon_8f577d23954d99deeba47cf55cec51af);
+            
+    
+            var marker_b8e83934fa264801770aedac5bc557db = L.marker(
+                [52.3168, 9.8078],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_169daa070a9598b0d8820649264187f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5508d2269487ccfef2e7a20dc1a55eb0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d9b94bd17d090000712f1105b8cef536 = $(`<div id="html_d9b94bd17d090000712f1105b8cef536" style="width: 100.0%; height: 100.0%;">     <b>OrthoCentrum Laatzen</b><br>     Kategorie: DEXA<br>     Adresse: Würzburger Straße 13, 30880 Laatzen<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 / 51 53 40 30<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.toportho.de/knochendichtemessung-dexa-dxa-messung/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_5508d2269487ccfef2e7a20dc1a55eb0.setContent(html_d9b94bd17d090000712f1105b8cef536);
+            
+        
+
+        marker_b8e83934fa264801770aedac5bc557db.bindPopup(popup_5508d2269487ccfef2e7a20dc1a55eb0)
+        ;
+
+        
+    
+    
+                marker_b8e83934fa264801770aedac5bc557db.setIcon(icon_169daa070a9598b0d8820649264187f3);
+            
+    
+            var marker_d392a12039d1bc16756feb20e01e054f = L.marker(
+                [52.39206, 9.7344],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_dc81bb1dfb2514a59ff6c144ae8e986c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2058198cf339a76ba18ae68b3ef1f1a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1d974a4091f2f53924e5814e76ee46e8 = $(`<div id="html_1d974a4091f2f53924e5814e76ee46e8" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Frank Oreschko &amp; Claus Picard (Vahrenwalder Platz)</b><br>     Kategorie: DEXA<br>     Adresse: Vahrenwalder Straße 71–75, 30165 Hannover<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 3500307<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.orthopaedie-hannover-vahrenwalder-platz.de/Knochendichtemessung/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_f2058198cf339a76ba18ae68b3ef1f1a.setContent(html_1d974a4091f2f53924e5814e76ee46e8);
+            
+        
+
+        marker_d392a12039d1bc16756feb20e01e054f.bindPopup(popup_f2058198cf339a76ba18ae68b3ef1f1a)
+        ;
+
+        
+    
+    
+                marker_d392a12039d1bc16756feb20e01e054f.setIcon(icon_dc81bb1dfb2514a59ff6c144ae8e986c);
+            
+    
+            var marker_a5ff4aa6d238cb57a33c241ea20f414b = L.marker(
+                [52.3978, 9.7335],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_9fa654e916d0682804235ab485f5b39f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8dfe7c0b8e29dd415813ef56dde508ac = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4b1ea1707635a4987cd2c43d891e31cc = $(`<div id="html_4b1ea1707635a4987cd2c43d891e31cc" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Frank Oreschko &amp; Claus Picard (Südstadt)</b><br>     Kategorie: DEXA<br>     Adresse: Hildesheimer Straße 102–104, 30173 Hannover<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 808525<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://orthopaedie-suedstadt-hannover.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_8dfe7c0b8e29dd415813ef56dde508ac.setContent(html_4b1ea1707635a4987cd2c43d891e31cc);
+            
+        
+
+        marker_a5ff4aa6d238cb57a33c241ea20f414b.bindPopup(popup_8dfe7c0b8e29dd415813ef56dde508ac)
+        ;
+
+        
+    
+    
+                marker_a5ff4aa6d238cb57a33c241ea20f414b.setIcon(icon_9fa654e916d0682804235ab485f5b39f);
+            
+    
+            var marker_5aca6325192716da3cd098f27c2ae875 = L.marker(
+                [52.3341, 9.7785],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_1e38e2c2f98f97c06c0df7a5dcf6a28d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_159fe7f98acab064062a8486cd5784ff = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8c989b143847451498b1a68b88e6e132 = $(`<div id="html_8c989b143847451498b1a68b88e6e132" style="width: 100.0%; height: 100.0%;">     <b>MVZ Medizinisches Labor Hannover GmbH</b><br>     Kategorie: Blutlabor<br>     Adresse: Am TÜV 6, 30519 Hannover<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: +49 511 85622-0<br>     Selbstzahler: ja<br>     Preisinfo: abhängig vom Test<br>     <a href='https://www.labor-limbach-hannover.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_159fe7f98acab064062a8486cd5784ff.setContent(html_8c989b143847451498b1a68b88e6e132);
+            
+        
+
+        marker_5aca6325192716da3cd098f27c2ae875.bindPopup(popup_159fe7f98acab064062a8486cd5784ff)
+        ;
+
+        
+    
+    
+                marker_5aca6325192716da3cd098f27c2ae875.setIcon(icon_1e38e2c2f98f97c06c0df7a5dcf6a28d);
+            
+    
+            var marker_fde09b46efe3b5febf7f1ad8279cdaf5 = L.marker(
+                [51.43613, 6.98952],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_b142425f096121b43f7786375e9ad28f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_972332b9b9cf48223ee2fae94e5a7beb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9124fda72a4f5f6b65936b69bee928f4 = $(`<div id="html_9124fda72a4f5f6b65936b69bee928f4" style="width: 100.0%; height: 100.0%;">     <b>Klinik für Endokrinologie, Diabetologie und Stoffwechsel Universitätsklinikum Essen</b><br>     Kategorie: DEXA<br>     Adresse: Hufelandstraße 55, 45147 Essen<br>     Leistungen: Body Composition, Knochendichtemessung<br>     Kontakt: +49 201 723-6303<br>     Selbstzahler: nein<br>     Preisinfo: nicht öffentlich<br>     <a href='https://endokrinologie.de/knochendichtemessung/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_972332b9b9cf48223ee2fae94e5a7beb.setContent(html_9124fda72a4f5f6b65936b69bee928f4);
+            
+        
+
+        marker_fde09b46efe3b5febf7f1ad8279cdaf5.bindPopup(popup_972332b9b9cf48223ee2fae94e5a7beb)
+        ;
+
+        
+    
+    
+                marker_fde09b46efe3b5febf7f1ad8279cdaf5.setIcon(icon_b142425f096121b43f7786375e9ad28f);
+            
+    
+            var marker_1c584c6971bc04b2ef4221ff494ac8d4 = L.marker(
+                [49.450775, 11.077334],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_e49ebf1227b074b8b94b32cacb5b02e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_752c45fdf308f99de427b66a3118cf22 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_39cb6aec088595774f5c7e8bb86153bf = $(`<div id="html_39cb6aec088595774f5c7e8bb86153bf" style="width: 100.0%; height: 100.0%;">     <b>Praxis für Endokrinologie</b><br>     Kategorie: DEXA<br>     Adresse: Karolinenstraße 1, 90402 Nürnberg<br>     Leistungen: Body Composition<br>     Kontakt: (09 11) 23 605 0<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://hormone-nbg.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_752c45fdf308f99de427b66a3118cf22.setContent(html_39cb6aec088595774f5c7e8bb86153bf);
+            
+        
+
+        marker_1c584c6971bc04b2ef4221ff494ac8d4.bindPopup(popup_752c45fdf308f99de427b66a3118cf22)
+        ;
+
+        
+    
+    
+                marker_1c584c6971bc04b2ef4221ff494ac8d4.setIcon(icon_e49ebf1227b074b8b94b32cacb5b02e9);
+            
+    
+            var marker_12f053c796913475de62a4d8e4ec055d = L.marker(
+                [50.9485, 6.9084],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_ea78a58e57376b1797ffb58fbcdac6d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49eeea3906244a88e33ed9058f13a5e2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8bf83cd8f85dfb0a2264981825f1867c = $(`<div id="html_8bf83cd8f85dfb0a2264981825f1867c" style="width: 100.0%; height: 100.0%;">     <b>Orthopädie em Veede</b><br>     Kategorie: DEXA<br>     Adresse: Dürener Straße 199–203, 50931 Köln<br>     Leistungen: Body Composition, Knochendichtemessung<br>     Kontakt: 0221 95587659<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://orthopaedie-em-veedel.de/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_49eeea3906244a88e33ed9058f13a5e2.setContent(html_8bf83cd8f85dfb0a2264981825f1867c);
+            
+        
+
+        marker_12f053c796913475de62a4d8e4ec055d.bindPopup(popup_49eeea3906244a88e33ed9058f13a5e2)
+        ;
+
+        
+    
+    
+                marker_12f053c796913475de62a4d8e4ec055d.setIcon(icon_ea78a58e57376b1797ffb58fbcdac6d7);
+            
+    
+            var marker_b278e3a66cdc6b87a7e5ede17dd7e4ed = L.marker(
+                [52.52364, 13.37821],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_781a818aa89085c821b5b404d88a8305 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99b98840b62606ca3c0bcc337bc296b9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5876ea1d5b4dea5c66f3947c34afd6c1 = $(`<div id="html_5876ea1d5b4dea5c66f3947c34afd6c1" style="width: 100.0%; height: 100.0%;">     <b>Charité – Universitätsmedizin Berlin</b><br>     Kategorie: DEXA<br>     Adresse: Charitéplatz 1, 10117 Berlin<br>     Leistungen: Body Composition<br>     Kontakt: 030 45050<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich (Hinweis: „nein mit ärztlicher Überweisung“)<br>     <a href='https://karriere.charite.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_99b98840b62606ca3c0bcc337bc296b9.setContent(html_5876ea1d5b4dea5c66f3947c34afd6c1);
+            
+        
+
+        marker_b278e3a66cdc6b87a7e5ede17dd7e4ed.bindPopup(popup_99b98840b62606ca3c0bcc337bc296b9)
+        ;
+
+        
+    
+    
+                marker_b278e3a66cdc6b87a7e5ede17dd7e4ed.setIcon(icon_781a818aa89085c821b5b404d88a8305);
+            
+    
+            var marker_89c380a5c3b82d4ff59f556d24fe8b7c = L.marker(
+                [49.993, 8.2473],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_571dae9e235de9cc90d48b680f7368aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4727b667d9ba88da667b77962f2c8eb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7f4125ac574bddd42a630c07fd965daf = $(`<div id="html_7f4125ac574bddd42a630c07fd965daf" style="width: 100.0%; height: 100.0%;">     <b>MEDI-MANAGE</b><br>     Kategorie: DEXA<br>     Adresse: Göttelmannstraße 48, 55131 Mainz<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 06131 588870<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.medi-manage.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_a4727b667d9ba88da667b77962f2c8eb.setContent(html_7f4125ac574bddd42a630c07fd965daf);
+            
+        
+
+        marker_89c380a5c3b82d4ff59f556d24fe8b7c.bindPopup(popup_a4727b667d9ba88da667b77962f2c8eb)
+        ;
+
+        
+    
+    
+                marker_89c380a5c3b82d4ff59f556d24fe8b7c.setIcon(icon_571dae9e235de9cc90d48b680f7368aa);
+            
+    
+            var marker_cbc24de8fe529caf974ce60c80d2215e = L.marker(
+                [48.9432, 8.398],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_b00496f34150d9646ac07ee8c08cf0ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de9cd93ccbe95cfe538f0c0cdb35b565 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3cd00c757caccd35a9a30e0dcdcc9e2f = $(`<div id="html_3cd00c757caccd35a9a30e0dcdcc9e2f" style="width: 100.0%; height: 100.0%;">     <b>Radiologie Ettlingen</b><br>     Kategorie: DEXA<br>     Adresse: Wilhelmstraße 1, 76275 Ettlingen<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 07243 14240<br>     Selbstzahler: keine Angabe<br>     Preisinfo: 55 EURO<br>     <a href='https://radiologie-ettlingen.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_de9cd93ccbe95cfe538f0c0cdb35b565.setContent(html_3cd00c757caccd35a9a30e0dcdcc9e2f);
+            
+        
+
+        marker_cbc24de8fe529caf974ce60c80d2215e.bindPopup(popup_de9cd93ccbe95cfe538f0c0cdb35b565)
+        ;
+
+        
+    
+    
+                marker_cbc24de8fe529caf974ce60c80d2215e.setIcon(icon_b00496f34150d9646ac07ee8c08cf0ce);
+            
+    
+            var marker_693574f9e01ff1a652f25cc4b99d08b0 = L.marker(
+                [51.5396, 9.9357],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_bc6a19c3ea5ee79c65e48e3b6a5515ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de9956950a5426a4603ea3b0a5f16a03 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8483430b9f52b10fdd57f36e95014626 = $(`<div id="html_8483430b9f52b10fdd57f36e95014626" style="width: 100.0%; height: 100.0%;">     <b>Universitätsmedizin Göttingen Institut für Klinische und Interventionelle Radiologie</b><br>     Kategorie: DEXA<br>     Adresse: Robert-Koch-Straße 40 37075 Göttingen<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0551 3960300<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich <br>     <a href='https://radiologie.umg.eu/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_de9956950a5426a4603ea3b0a5f16a03.setContent(html_8483430b9f52b10fdd57f36e95014626);
+            
+        
+
+        marker_693574f9e01ff1a652f25cc4b99d08b0.bindPopup(popup_de9956950a5426a4603ea3b0a5f16a03)
+        ;
+
+        
+    
+    
+                marker_693574f9e01ff1a652f25cc4b99d08b0.setIcon(icon_bc6a19c3ea5ee79c65e48e3b6a5515ed);
+            
+    
+            var marker_50c768c79eb81670a642e9c1eefdde7a = L.marker(
+                [53.2501, 10.4176],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_41538a90613a15a35e9a3e973a2eb75e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c95a25bf7302c01a622b22d2756c33a1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_31143360fc3b9d76e62f6855d157d863 = $(`<div id="html_31143360fc3b9d76e62f6855d157d863" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Matthias Keese, Facharzt für Orthopädie Osteologe DVO</b><br>     Kategorie: DEXA<br>     Adresse: Volgerstr. 4 • 21335 Lüneburg<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0 41 31 - 4 13 77<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich <br>     <a href='https://orthopaedie-dr-keese.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_c95a25bf7302c01a622b22d2756c33a1.setContent(html_31143360fc3b9d76e62f6855d157d863);
+            
+        
+
+        marker_50c768c79eb81670a642e9c1eefdde7a.bindPopup(popup_c95a25bf7302c01a622b22d2756c33a1)
+        ;
+
+        
+    
+    
+                marker_50c768c79eb81670a642e9c1eefdde7a.setIcon(icon_41538a90613a15a35e9a3e973a2eb75e);
+            
+    
+            var marker_2e462e676339ac1df99f783932904b8d = L.marker(
+                [52.2895, 8.9146],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_115f05e901dfcdb67679f95ad6e034e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00dab183c2f70e271978f80b9db429a4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4522025d7628594dbcd8312fefca557b = $(`<div id="html_4522025d7628594dbcd8312fefca557b" style="width: 100.0%; height: 100.0%;">     <b>Praxis Minden</b><br>     Kategorie: DEXA<br>     Adresse: Marienstraße 28/28a 32427 Minden<br>     Leistungen: Knochendichtemessung, Body Composition<br>     Kontakt: 0571 - 83 777-0<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich <br>     <a href='https://www.radiologieteam-minden.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_00dab183c2f70e271978f80b9db429a4.setContent(html_4522025d7628594dbcd8312fefca557b);
+            
+        
+
+        marker_2e462e676339ac1df99f783932904b8d.bindPopup(popup_00dab183c2f70e271978f80b9db429a4)
+        ;
+
+        
+    
+    
+                marker_2e462e676339ac1df99f783932904b8d.setIcon(icon_115f05e901dfcdb67679f95ad6e034e3);
+            
+    
+            var marker_a620c35a48fc8d541da96025174e3cee = L.marker(
+                [53.1052, 9.4134],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_1f645a4901b0abc675f018e65e9768ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92d8f599d5026532e5863886d3386f46 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_61839aeb830169bc4909a6f139ccd828 = $(`<div id="html_61839aeb830169bc4909a6f139ccd828" style="width: 100.0%; height: 100.0%;">     <b>AGAPLESION DIAKONIEKLINIKUM ROTENBURG gGmbH </b><br>     Kategorie: DEXA<br>     Adresse: Elise-Averdieck-Straße 17, 27356 Rotenburg (Wümme)<br>     Leistungen: Body Composition<br>     Kontakt: 04261 770<br>     Selbstzahler: ja<br>     Preisinfo: 40 EURO <br>     <a href='https://www.diako-online.de/start' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_92d8f599d5026532e5863886d3386f46.setContent(html_61839aeb830169bc4909a6f139ccd828);
+            
+        
+
+        marker_a620c35a48fc8d541da96025174e3cee.bindPopup(popup_92d8f599d5026532e5863886d3386f46)
+        ;
+
+        
+    
+    
+                marker_a620c35a48fc8d541da96025174e3cee.setIcon(icon_1f645a4901b0abc675f018e65e9768ec);
+            
+    
+            var marker_de45622d38eb86bba5338ee105a56690 = L.marker(
+                [53.6486, 10.0085],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_25fd18c900809a859feae25e00187303 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7986b1f09cbb1ed089cc79b61b7af8e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9fa0a8dba482a7c0c0d27a5054fbfd82 = $(`<div id="html_9fa0a8dba482a7c0c0d27a5054fbfd82" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Georg P. Dahmen, Facharzt für Orthopädie</b><br>     Kategorie: DEXA<br>     Adresse: Tangstedter Landstrasse 77, 22415 Hamburg-Langenhorn<br>     Leistungen: Knochendichtemessung<br>     Kontakt: +49 40 53300630<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://orthopaedie-langenhorn.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_d7986b1f09cbb1ed089cc79b61b7af8e.setContent(html_9fa0a8dba482a7c0c0d27a5054fbfd82);
+            
+        
+
+        marker_de45622d38eb86bba5338ee105a56690.bindPopup(popup_d7986b1f09cbb1ed089cc79b61b7af8e)
+        ;
+
+        
+    
+    
+                marker_de45622d38eb86bba5338ee105a56690.setIcon(icon_25fd18c900809a859feae25e00187303);
+            
+    
+            var marker_1b32ca08f403b81a0532f94603ef9510 = L.marker(
+                [53.5904, 9.9744],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_b7c9b723bcb05e2ff48969155e772e00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c01ac7b27ef3e3319c45576528cb6528 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_defd87ab2aee91bb7a45e8d7b9f76733 = $(`<div id="html_defd87ab2aee91bb7a45e8d7b9f76733" style="width: 100.0%; height: 100.0%;">     <b>University Medical Center Hamburg-Eppendorf</b><br>     Kategorie: DEXA<br>     Adresse: Martinistraße 52, 20251 Hamburg<br>     Leistungen: Knochendichtemessung<br>     Kontakt: +49 (0) 40 7410 - 0<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.uke.de/index.html' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_c01ac7b27ef3e3319c45576528cb6528.setContent(html_defd87ab2aee91bb7a45e8d7b9f76733);
+            
+        
+
+        marker_1b32ca08f403b81a0532f94603ef9510.bindPopup(popup_c01ac7b27ef3e3319c45576528cb6528)
+        ;
+
+        
+    
+    
+                marker_1b32ca08f403b81a0532f94603ef9510.setIcon(icon_b7c9b723bcb05e2ff48969155e772e00);
+            
+    
+            var marker_696252aae5f6460ee2ceb837ac048894 = L.marker(
+                [51.5322, 9.9025],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_011030ef8e810ad1c9a1d1b2d2038556 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ee90e0f106616ae41f149184ec7eaf9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1c85329e88a183a9ffb9d59840f47ae6 = $(`<div id="html_1c85329e88a183a9ffb9d59840f47ae6" style="width: 100.0%; height: 100.0%;">     <b>MVZ Göttingen</b><br>     Kategorie: Blutlabor<br>     Adresse: Kasseler Landstraße 25a 37081 Göttingen<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 0551 99 888 55 ,  0551 99 888 62<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.mvz-goettingen.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_1ee90e0f106616ae41f149184ec7eaf9.setContent(html_1c85329e88a183a9ffb9d59840f47ae6);
+            
+        
+
+        marker_696252aae5f6460ee2ceb837ac048894.bindPopup(popup_1ee90e0f106616ae41f149184ec7eaf9)
+        ;
+
+        
+    
+    
+                marker_696252aae5f6460ee2ceb837ac048894.setIcon(icon_011030ef8e810ad1c9a1d1b2d2038556);
+            
+    
+            var marker_992e9730fbbd1e402f29de7e6581a71f = L.marker(
+                [51.7002, 9.9959],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_9701da6df09ebe9c0b92abbe94a5466c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5296e089f10789147b3f0b4f6574ebae = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c2c431f92036cb6e8af553201801f30f = $(`<div id="html_c2c431f92036cb6e8af553201801f30f" style="width: 100.0%; height: 100.0%;">     <b>MVZ Northeim</b><br>     Kategorie: Blutlabor<br>     Adresse: Sturmbäume 3 37154 Northeim<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 05551 8595<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_5296e089f10789147b3f0b4f6574ebae.setContent(html_c2c431f92036cb6e8af553201801f30f);
+            
+        
+
+        marker_992e9730fbbd1e402f29de7e6581a71f.bindPopup(popup_5296e089f10789147b3f0b4f6574ebae)
+        ;
+
+        
+    
+    
+                marker_992e9730fbbd1e402f29de7e6581a71f.setIcon(icon_9701da6df09ebe9c0b92abbe94a5466c);
+            
+    
+            var marker_a8fd878c860cb14f52f8b0d2148d34fe = L.marker(
+                [51.72868, 10.24812],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_4754174ef3358feb9c57e1cc0ab683f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb5ec00ee64b2eb0c1b418e0277ee367 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_17775d752f63795f23a3fec7f8a09227 = $(`<div id="html_17775d752f63795f23a3fec7f8a09227" style="width: 100.0%; height: 100.0%;">     <b>MVZ Osterode</b><br>     Kategorie: Blutlabor<br>     Adresse: Bahnhofstraße 2 37520 Osterode am Harz<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 05522 3444<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_eb5ec00ee64b2eb0c1b418e0277ee367.setContent(html_17775d752f63795f23a3fec7f8a09227);
+            
+        
+
+        marker_a8fd878c860cb14f52f8b0d2148d34fe.bindPopup(popup_eb5ec00ee64b2eb0c1b418e0277ee367)
+        ;
+
+        
+    
+    
+                marker_a8fd878c860cb14f52f8b0d2148d34fe.setIcon(icon_4754174ef3358feb9c57e1cc0ab683f2);
+            
+    
+            var marker_02c50b8901f9abc29b887ec863a76b45 = L.marker(
+                [51.6597, 9.6385],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_9d927387f307ee4dd385d3f0bd713e6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e52f238debcb9957f084df59097d0aa2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a826e3c5be64967e06c253b9e2abe337 = $(`<div id="html_a826e3c5be64967e06c253b9e2abe337" style="width: 100.0%; height: 100.0%;">     <b>MVZ Urslar</b><br>     Kategorie: Blutlabor<br>     Adresse: Eichhagen 2–4 37170 Uslar<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 05571 8019977<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_e52f238debcb9957f084df59097d0aa2.setContent(html_a826e3c5be64967e06c253b9e2abe337);
+            
+        
+
+        marker_02c50b8901f9abc29b887ec863a76b45.bindPopup(popup_e52f238debcb9957f084df59097d0aa2)
+        ;
+
+        
+    
+    
+                marker_02c50b8901f9abc29b887ec863a76b45.setIcon(icon_9d927387f307ee4dd385d3f0bd713e6a);
+            
+    
+            var marker_1f81703d3b7d75c02acf12e7371d9cff = L.marker(
+                [52.3759, 9.732],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_02c5ec2bebbbfb22a45dc556d89378be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a4a0f585f685441bc9cf5b9b13553fe = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_69ae1cf12bb6d0922c894b193346392a = $(`<div id="html_69ae1cf12bb6d0922c894b193346392a" style="width: 100.0%; height: 100.0%;">     <b>MVZ wagnerstibbe (amedes)</b><br>     Kategorie: Blutlabor<br>     Adresse: Georgstraße 50 30159 Hannover<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 0511 30 17 95 0,  0511 30 17 95 119<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_7a4a0f585f685441bc9cf5b9b13553fe.setContent(html_69ae1cf12bb6d0922c894b193346392a);
+            
+        
+
+        marker_1f81703d3b7d75c02acf12e7371d9cff.bindPopup(popup_7a4a0f585f685441bc9cf5b9b13553fe)
+        ;
+
+        
+    
+    
+                marker_1f81703d3b7d75c02acf12e7371d9cff.setIcon(icon_02c5ec2bebbbfb22a45dc556d89378be);
+            
+    
+            var marker_57d15f5f9f35be5b5da93173ce553243 = L.marker(
+                [51.4522, 7.0126],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_47fc5690c901c34c59ac34574330fd20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba5fa851450503170dbe38bf6feba489 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6fe33d772fc6f729ed129775c9839b23 = $(`<div id="html_6fe33d772fc6f729ed129775c9839b23" style="width: 100.0%; height: 100.0%;">     <b>MVZ Institut für Labormedizin und Klinische Genetik (amedes)</b><br>     Kategorie: Blutlabor<br>     Adresse: Rhein/Ruhr GmbH Willy-Brandt-Platz 4 45127 Essen<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 0201 74 77 60, 0201 74 77 690<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_ba5fa851450503170dbe38bf6feba489.setContent(html_6fe33d772fc6f729ed129775c9839b23);
+            
+        
+
+        marker_57d15f5f9f35be5b5da93173ce553243.bindPopup(popup_ba5fa851450503170dbe38bf6feba489)
+        ;
+
+        
+    
+    
+                marker_57d15f5f9f35be5b5da93173ce553243.setIcon(icon_47fc5690c901c34c59ac34574330fd20);
+            
+    
+            var marker_9c40b13b17449d97a1e728e0f6067d01 = L.marker(
+                [51.496, 11.992],
+                {
+}
+            ).addTo(marker_cluster_b72c1af13b2ae145e23030b1195fe6a1);
+        
+    
+            var icon_1d204782977d6ee4484bb5603c988bfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b96b8769e7ae264226a61c6bc9cdeb0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a0a10b0dcbc5e290298b05abbe4e573d = $(`<div id="html_a0a10b0dcbc5e290298b05abbe4e573d" style="width: 100.0%; height: 100.0%;">     <b>amedes MVZ für Laboratoriums-diagnostik und Mikrobiologie Halle/Leipzig GmbH</b><br>     Kategorie: Blutlabor<br>     Adresse: Leipziger Chaussee 191f 06112 Halle<br>     Leistungen: Blutuntersuchungen<br>     Kontakt:  0345 445 07 100, 0345 445 07 210<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_9b96b8769e7ae264226a61c6bc9cdeb0.setContent(html_a0a10b0dcbc5e290298b05abbe4e573d);
+            
+        
+
+        marker_9c40b13b17449d97a1e728e0f6067d01.bindPopup(popup_9b96b8769e7ae264226a61c6bc9cdeb0)
+        ;
+
+        
+    
+    
+                marker_9c40b13b17449d97a1e728e0f6067d01.setIcon(icon_1d204782977d6ee4484bb5603c988bfe);
+            
+    
+            marker_cluster_b72c1af13b2ae145e23030b1195fe6a1.addTo(map_ca021805274b783c11766dce5f04bb13);
+        
+    
+            var marker_cluster_6daabef926c8abb54f9c0c45dd9560bf = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_45f1327077f120b27900f6e7d72ed2d2 = L.marker(
+                [52.373, 9.736],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_fd07e1adc180aa8e0102ec383c9e6801 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f941981447760a8f6a3b701b9a293e3b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ae58ea43d1e00ea0345e3a559fa0f745 = $(`<div id="html_ae58ea43d1e00ea0345e3a559fa0f745" style="width: 100.0%; height: 100.0%;">     <b>Röntgenpraxis Georgstraße</b><br>     Kategorie: DEXA<br>     Adresse: Georgstraße 16, 30159 Hannover<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 1237170<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.radiologie-nuklearmedizin-roentgenpraxis-hannover.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_f941981447760a8f6a3b701b9a293e3b.setContent(html_ae58ea43d1e00ea0345e3a559fa0f745);
+            
+        
+
+        marker_45f1327077f120b27900f6e7d72ed2d2.bindPopup(popup_f941981447760a8f6a3b701b9a293e3b)
+        ;
+
+        
+    
+    
+                marker_45f1327077f120b27900f6e7d72ed2d2.setIcon(icon_fd07e1adc180aa8e0102ec383c9e6801);
+            
+    
+            var marker_d5b849c3cb54c93188430ff8bc34ffef = L.marker(
+                [52.4172, 9.7565],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_d2fbc992fe3c8966c9d1720ee0000782 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a131258c821206bc8ff4984fad052330 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4330759d5223ffaeb8a063f7707c2b39 = $(`<div id="html_4330759d5223ffaeb8a063f7707c2b39" style="width: 100.0%; height: 100.0%;">     <b>Orthopädie Zentrum Hannover</b><br>     Kategorie: DEXA<br>     Adresse: Joachimstraße 1, 30159 Hannover<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 700 520 70 / 0511 700 520 80<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.orthopaedie-zentrum-hannover.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_a131258c821206bc8ff4984fad052330.setContent(html_4330759d5223ffaeb8a063f7707c2b39);
+            
+        
+
+        marker_d5b849c3cb54c93188430ff8bc34ffef.bindPopup(popup_a131258c821206bc8ff4984fad052330)
+        ;
+
+        
+    
+    
+                marker_d5b849c3cb54c93188430ff8bc34ffef.setIcon(icon_d2fbc992fe3c8966c9d1720ee0000782);
+            
+    
+            var marker_2add54545fc9d166a319e789050228ba = L.marker(
+                [52.3168, 9.8078],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_51f5ba3f1219c31eda1fe3c48140b5de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c1b9a7e8f81b2f08c818dfb563a81b7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bd4bb84d6bc4a31f0f726af75b3e91cf = $(`<div id="html_bd4bb84d6bc4a31f0f726af75b3e91cf" style="width: 100.0%; height: 100.0%;">     <b>OrthoCentrum Laatzen</b><br>     Kategorie: DEXA<br>     Adresse: Würzburger Straße 13, 30880 Laatzen<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 / 51 53 40 30<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.toportho.de/knochendichtemessung-dexa-dxa-messung/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_8c1b9a7e8f81b2f08c818dfb563a81b7.setContent(html_bd4bb84d6bc4a31f0f726af75b3e91cf);
+            
+        
+
+        marker_2add54545fc9d166a319e789050228ba.bindPopup(popup_8c1b9a7e8f81b2f08c818dfb563a81b7)
+        ;
+
+        
+    
+    
+                marker_2add54545fc9d166a319e789050228ba.setIcon(icon_51f5ba3f1219c31eda1fe3c48140b5de);
+            
+    
+            var marker_b97e31b85bc8cfaceebabc24bdb3a4fe = L.marker(
+                [52.39206, 9.7344],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_2deb0a0f4440cee54bf6f39fb445a60a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6afd34004469f60bdd8a3d30e7c5b541 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3edf3251a56722119a73a47af833b91a = $(`<div id="html_3edf3251a56722119a73a47af833b91a" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Frank Oreschko &amp; Claus Picard (Vahrenwalder Platz)</b><br>     Kategorie: DEXA<br>     Adresse: Vahrenwalder Straße 71–75, 30165 Hannover<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 3500307<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.orthopaedie-hannover-vahrenwalder-platz.de/Knochendichtemessung/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_6afd34004469f60bdd8a3d30e7c5b541.setContent(html_3edf3251a56722119a73a47af833b91a);
+            
+        
+
+        marker_b97e31b85bc8cfaceebabc24bdb3a4fe.bindPopup(popup_6afd34004469f60bdd8a3d30e7c5b541)
+        ;
+
+        
+    
+    
+                marker_b97e31b85bc8cfaceebabc24bdb3a4fe.setIcon(icon_2deb0a0f4440cee54bf6f39fb445a60a);
+            
+    
+            var marker_c6fddcb4b5fabc4ea4f81cb675b55251 = L.marker(
+                [52.3978, 9.7335],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_a0a61f3c3d44ed96c9f2d692b8962b83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d240da179c62216478d3e326d2c8537 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6fd1d4cabe0e0ea01fc8448fbe14f99b = $(`<div id="html_6fd1d4cabe0e0ea01fc8448fbe14f99b" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Frank Oreschko &amp; Claus Picard (Südstadt)</b><br>     Kategorie: DEXA<br>     Adresse: Hildesheimer Straße 102–104, 30173 Hannover<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0511 808525<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://orthopaedie-suedstadt-hannover.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_5d240da179c62216478d3e326d2c8537.setContent(html_6fd1d4cabe0e0ea01fc8448fbe14f99b);
+            
+        
+
+        marker_c6fddcb4b5fabc4ea4f81cb675b55251.bindPopup(popup_5d240da179c62216478d3e326d2c8537)
+        ;
+
+        
+    
+    
+                marker_c6fddcb4b5fabc4ea4f81cb675b55251.setIcon(icon_a0a61f3c3d44ed96c9f2d692b8962b83);
+            
+    
+            var marker_af0fe1a9c7eef4bfeca07f655c9cb3a8 = L.marker(
+                [49.993, 8.2473],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_4ac37ff98fcc7ef4b285f092359189f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9eb9a76bbe3ff4ce9a5586cf407dc7d1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_69e513a18c7aa31295509eb95529e619 = $(`<div id="html_69e513a18c7aa31295509eb95529e619" style="width: 100.0%; height: 100.0%;">     <b>MEDI-MANAGE</b><br>     Kategorie: DEXA<br>     Adresse: Göttelmannstraße 48, 55131 Mainz<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 06131 588870<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.medi-manage.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_9eb9a76bbe3ff4ce9a5586cf407dc7d1.setContent(html_69e513a18c7aa31295509eb95529e619);
+            
+        
+
+        marker_af0fe1a9c7eef4bfeca07f655c9cb3a8.bindPopup(popup_9eb9a76bbe3ff4ce9a5586cf407dc7d1)
+        ;
+
+        
+    
+    
+                marker_af0fe1a9c7eef4bfeca07f655c9cb3a8.setIcon(icon_4ac37ff98fcc7ef4b285f092359189f4);
+            
+    
+            var marker_99a789b9f99cbc8377d8ae2dcec5fdef = L.marker(
+                [48.9432, 8.398],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_888266dc0b7cf0e6ef961a2da23c7dc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc78249ad179576b3cdf20ca74abc108 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_61176733527dedaf261d2de0ea6d67e8 = $(`<div id="html_61176733527dedaf261d2de0ea6d67e8" style="width: 100.0%; height: 100.0%;">     <b>Radiologie Ettlingen</b><br>     Kategorie: DEXA<br>     Adresse: Wilhelmstraße 1, 76275 Ettlingen<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 07243 14240<br>     Selbstzahler: keine Angabe<br>     Preisinfo: 55 EURO<br>     <a href='https://radiologie-ettlingen.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_cc78249ad179576b3cdf20ca74abc108.setContent(html_61176733527dedaf261d2de0ea6d67e8);
+            
+        
+
+        marker_99a789b9f99cbc8377d8ae2dcec5fdef.bindPopup(popup_cc78249ad179576b3cdf20ca74abc108)
+        ;
+
+        
+    
+    
+                marker_99a789b9f99cbc8377d8ae2dcec5fdef.setIcon(icon_888266dc0b7cf0e6ef961a2da23c7dc3);
+            
+    
+            var marker_a5252b29d35f61c64bd1cf9da6e89360 = L.marker(
+                [51.5396, 9.9357],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_cb76c5375751ab00d75c710cbd63b770 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24839fd5ac25a12f41765f1c0150c46d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_356196b47164cba1a108bd166015d7ae = $(`<div id="html_356196b47164cba1a108bd166015d7ae" style="width: 100.0%; height: 100.0%;">     <b>Universitätsmedizin Göttingen Institut für Klinische und Interventionelle Radiologie</b><br>     Kategorie: DEXA<br>     Adresse: Robert-Koch-Straße 40 37075 Göttingen<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0551 3960300<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich <br>     <a href='https://radiologie.umg.eu/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_24839fd5ac25a12f41765f1c0150c46d.setContent(html_356196b47164cba1a108bd166015d7ae);
+            
+        
+
+        marker_a5252b29d35f61c64bd1cf9da6e89360.bindPopup(popup_24839fd5ac25a12f41765f1c0150c46d)
+        ;
+
+        
+    
+    
+                marker_a5252b29d35f61c64bd1cf9da6e89360.setIcon(icon_cb76c5375751ab00d75c710cbd63b770);
+            
+    
+            var marker_bd51272156af6c9f6b777f0b2ca56c71 = L.marker(
+                [53.2501, 10.4176],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_a1a8736b493265cdf02c430a98b0f314 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca11844c190e219b758c2405443ada19 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_14cbc7f3d719d1786a4335eee577e996 = $(`<div id="html_14cbc7f3d719d1786a4335eee577e996" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Matthias Keese, Facharzt für Orthopädie Osteologe DVO</b><br>     Kategorie: DEXA<br>     Adresse: Volgerstr. 4 • 21335 Lüneburg<br>     Leistungen: Knochendichtemessung<br>     Kontakt: 0 41 31 - 4 13 77<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich <br>     <a href='https://orthopaedie-dr-keese.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_ca11844c190e219b758c2405443ada19.setContent(html_14cbc7f3d719d1786a4335eee577e996);
+            
+        
+
+        marker_bd51272156af6c9f6b777f0b2ca56c71.bindPopup(popup_ca11844c190e219b758c2405443ada19)
+        ;
+
+        
+    
+    
+                marker_bd51272156af6c9f6b777f0b2ca56c71.setIcon(icon_a1a8736b493265cdf02c430a98b0f314);
+            
+    
+            var marker_cbe2ad38c0cbb3b5eac9f3e56aaad4ba = L.marker(
+                [53.6486, 10.0085],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_02eb2604a3e4f8307b8928879ba249b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3e6d4c72121c6fd18db4e41da306513 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ba867b46922e48ffe00e701b57ef7fba = $(`<div id="html_ba867b46922e48ffe00e701b57ef7fba" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Georg P. Dahmen, Facharzt für Orthopädie</b><br>     Kategorie: DEXA<br>     Adresse: Tangstedter Landstrasse 77, 22415 Hamburg-Langenhorn<br>     Leistungen: Knochendichtemessung<br>     Kontakt: +49 40 53300630<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://orthopaedie-langenhorn.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_b3e6d4c72121c6fd18db4e41da306513.setContent(html_ba867b46922e48ffe00e701b57ef7fba);
+            
+        
+
+        marker_cbe2ad38c0cbb3b5eac9f3e56aaad4ba.bindPopup(popup_b3e6d4c72121c6fd18db4e41da306513)
+        ;
+
+        
+    
+    
+                marker_cbe2ad38c0cbb3b5eac9f3e56aaad4ba.setIcon(icon_02eb2604a3e4f8307b8928879ba249b3);
+            
+    
+            var marker_f006f0c1d948f664191277b0eec5c8d0 = L.marker(
+                [53.5904, 9.9744],
+                {
+}
+            ).addTo(marker_cluster_6daabef926c8abb54f9c0c45dd9560bf);
+        
+    
+            var icon_8bcc2debc86ae934ecfc55bcad0582c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bad0830e32f4ba324099c362718c2f9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_90b582e9fd8f896d719a30b39a550a7f = $(`<div id="html_90b582e9fd8f896d719a30b39a550a7f" style="width: 100.0%; height: 100.0%;">     <b>University Medical Center Hamburg-Eppendorf</b><br>     Kategorie: DEXA<br>     Adresse: Martinistraße 52, 20251 Hamburg<br>     Leistungen: Knochendichtemessung<br>     Kontakt: +49 (0) 40 7410 - 0<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.uke.de/index.html' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_4bad0830e32f4ba324099c362718c2f9.setContent(html_90b582e9fd8f896d719a30b39a550a7f);
+            
+        
+
+        marker_f006f0c1d948f664191277b0eec5c8d0.bindPopup(popup_4bad0830e32f4ba324099c362718c2f9)
+        ;
+
+        
+    
+    
+                marker_f006f0c1d948f664191277b0eec5c8d0.setIcon(icon_8bcc2debc86ae934ecfc55bcad0582c5);
+            
+    
+            var marker_cluster_bb1671428b4915a8eab7dd34923b35cb = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_f555dfcfc6b79cc15e511da9199de915 = L.marker(
+                [49.450775, 11.077334],
+                {
+}
+            ).addTo(marker_cluster_bb1671428b4915a8eab7dd34923b35cb);
+        
+    
+            var icon_68e864e75e4f236f5ce0f816ae182d50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd73aef70fb61d78c819493c62b57315 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_95aa60366c04a359db633b4fa6450a53 = $(`<div id="html_95aa60366c04a359db633b4fa6450a53" style="width: 100.0%; height: 100.0%;">     <b>Praxis für Endokrinologie</b><br>     Kategorie: DEXA<br>     Adresse: Karolinenstraße 1, 90402 Nürnberg<br>     Leistungen: Body Composition<br>     Kontakt: (09 11) 23 605 0<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://hormone-nbg.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_bd73aef70fb61d78c819493c62b57315.setContent(html_95aa60366c04a359db633b4fa6450a53);
+            
+        
+
+        marker_f555dfcfc6b79cc15e511da9199de915.bindPopup(popup_bd73aef70fb61d78c819493c62b57315)
+        ;
+
+        
+    
+    
+                marker_f555dfcfc6b79cc15e511da9199de915.setIcon(icon_68e864e75e4f236f5ce0f816ae182d50);
+            
+    
+            var marker_9aecaff850e1e1310e5cec3557919e7e = L.marker(
+                [52.52364, 13.37821],
+                {
+}
+            ).addTo(marker_cluster_bb1671428b4915a8eab7dd34923b35cb);
+        
+    
+            var icon_b5866b1fc52f449bbb10d5427135bd6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f94bfd85abe0c749831ea34c4903e61 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fc4bd264cb7308d5bd3d24290164e993 = $(`<div id="html_fc4bd264cb7308d5bd3d24290164e993" style="width: 100.0%; height: 100.0%;">     <b>Charité – Universitätsmedizin Berlin</b><br>     Kategorie: DEXA<br>     Adresse: Charitéplatz 1, 10117 Berlin<br>     Leistungen: Body Composition<br>     Kontakt: 030 45050<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich (Hinweis: „nein mit ärztlicher Überweisung“)<br>     <a href='https://karriere.charite.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_3f94bfd85abe0c749831ea34c4903e61.setContent(html_fc4bd264cb7308d5bd3d24290164e993);
+            
+        
+
+        marker_9aecaff850e1e1310e5cec3557919e7e.bindPopup(popup_3f94bfd85abe0c749831ea34c4903e61)
+        ;
+
+        
+    
+    
+                marker_9aecaff850e1e1310e5cec3557919e7e.setIcon(icon_b5866b1fc52f449bbb10d5427135bd6d);
+            
+    
+            var marker_a91290b7ebf54f8a1da5d6c70860fc7b = L.marker(
+                [53.1052, 9.4134],
+                {
+}
+            ).addTo(marker_cluster_bb1671428b4915a8eab7dd34923b35cb);
+        
+    
+            var icon_0c0470da4318750a1cd10d9423d93f93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_633328b3341590bb11264364576a4421 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9d64d35fd711207134ac51f8e0786067 = $(`<div id="html_9d64d35fd711207134ac51f8e0786067" style="width: 100.0%; height: 100.0%;">     <b>AGAPLESION DIAKONIEKLINIKUM ROTENBURG gGmbH </b><br>     Kategorie: DEXA<br>     Adresse: Elise-Averdieck-Straße 17, 27356 Rotenburg (Wümme)<br>     Leistungen: Body Composition<br>     Kontakt: 04261 770<br>     Selbstzahler: ja<br>     Preisinfo: 40 EURO <br>     <a href='https://www.diako-online.de/start' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_633328b3341590bb11264364576a4421.setContent(html_9d64d35fd711207134ac51f8e0786067);
+            
+        
+
+        marker_a91290b7ebf54f8a1da5d6c70860fc7b.bindPopup(popup_633328b3341590bb11264364576a4421)
+        ;
+
+        
+    
+    
+                marker_a91290b7ebf54f8a1da5d6c70860fc7b.setIcon(icon_0c0470da4318750a1cd10d9423d93f93);
+            
+    
+            var marker_cluster_f87e270a43cdb5a49712a07334aaeb77 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_f9c77e2c362b7d0128bd56d50f7382b8 = L.marker(
+                [51.43613, 6.98952],
+                {
+}
+            ).addTo(marker_cluster_f87e270a43cdb5a49712a07334aaeb77);
+        
+    
+            var icon_ea43b48e923de1d8dfa29aebd0ae7346 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3967faaf4c99e801fede705107aa2869 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e2d6cf20a4914f79a843082ff3d0cd48 = $(`<div id="html_e2d6cf20a4914f79a843082ff3d0cd48" style="width: 100.0%; height: 100.0%;">     <b>Klinik für Endokrinologie, Diabetologie und Stoffwechsel Universitätsklinikum Essen</b><br>     Kategorie: DEXA<br>     Adresse: Hufelandstraße 55, 45147 Essen<br>     Leistungen: Body Composition, Knochendichtemessung<br>     Kontakt: +49 201 723-6303<br>     Selbstzahler: nein<br>     Preisinfo: nicht öffentlich<br>     <a href='https://endokrinologie.de/knochendichtemessung/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_3967faaf4c99e801fede705107aa2869.setContent(html_e2d6cf20a4914f79a843082ff3d0cd48);
+            
+        
+
+        marker_f9c77e2c362b7d0128bd56d50f7382b8.bindPopup(popup_3967faaf4c99e801fede705107aa2869)
+        ;
+
+        
+    
+    
+                marker_f9c77e2c362b7d0128bd56d50f7382b8.setIcon(icon_ea43b48e923de1d8dfa29aebd0ae7346);
+            
+    
+            var marker_15be0b3758c6607ae8687277f3513595 = L.marker(
+                [50.9485, 6.9084],
+                {
+}
+            ).addTo(marker_cluster_f87e270a43cdb5a49712a07334aaeb77);
+        
+    
+            var icon_e3de556f53a42ace464aa6f279c560e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e85e23169652b3c935250623c7a9f4a5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e44919439f95fce60fd4160dcf33ba7d = $(`<div id="html_e44919439f95fce60fd4160dcf33ba7d" style="width: 100.0%; height: 100.0%;">     <b>Orthopädie em Veede</b><br>     Kategorie: DEXA<br>     Adresse: Dürener Straße 199–203, 50931 Köln<br>     Leistungen: Body Composition, Knochendichtemessung<br>     Kontakt: 0221 95587659<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich<br>     <a href='https://orthopaedie-em-veedel.de/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_e85e23169652b3c935250623c7a9f4a5.setContent(html_e44919439f95fce60fd4160dcf33ba7d);
+            
+        
+
+        marker_15be0b3758c6607ae8687277f3513595.bindPopup(popup_e85e23169652b3c935250623c7a9f4a5)
+        ;
+
+        
+    
+    
+                marker_15be0b3758c6607ae8687277f3513595.setIcon(icon_e3de556f53a42ace464aa6f279c560e4);
+            
+    
+            var marker_f9efd76370800a9ff85240fe3f8249a3 = L.marker(
+                [52.2895, 8.9146],
+                {
+}
+            ).addTo(marker_cluster_f87e270a43cdb5a49712a07334aaeb77);
+        
+    
+            var icon_0e45808e7ca27f36db0558fdc576df44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6893d490a15282909bfeeca594f1578b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_728e07ac301e589355fee7a206c7ab52 = $(`<div id="html_728e07ac301e589355fee7a206c7ab52" style="width: 100.0%; height: 100.0%;">     <b>Praxis Minden</b><br>     Kategorie: DEXA<br>     Adresse: Marienstraße 28/28a 32427 Minden<br>     Leistungen: Knochendichtemessung, Body Composition<br>     Kontakt: 0571 - 83 777-0<br>     Selbstzahler: keine Angabe<br>     Preisinfo: nicht öffentlich <br>     <a href='https://www.radiologieteam-minden.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_6893d490a15282909bfeeca594f1578b.setContent(html_728e07ac301e589355fee7a206c7ab52);
+            
+        
+
+        marker_f9efd76370800a9ff85240fe3f8249a3.bindPopup(popup_6893d490a15282909bfeeca594f1578b)
+        ;
+
+        
+    
+    
+                marker_f9efd76370800a9ff85240fe3f8249a3.setIcon(icon_0e45808e7ca27f36db0558fdc576df44);
+            
+    
+            var marker_cluster_19e0dfc9376082a66f29d0e45d33e324 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_33ce4670fddd059a42e0f0bbd760c87e = L.marker(
+                [52.3341, 9.7785],
+                {
+}
+            ).addTo(marker_cluster_19e0dfc9376082a66f29d0e45d33e324);
+        
+    
+            var icon_17928b4486eca2f2509e3a23abaefa99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5d369d140914ed162f3478869a3f6f4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9c740830d72c838016ade4beeb479760 = $(`<div id="html_9c740830d72c838016ade4beeb479760" style="width: 100.0%; height: 100.0%;">     <b>MVZ Medizinisches Labor Hannover GmbH</b><br>     Kategorie: Blutlabor<br>     Adresse: Am TÜV 6, 30519 Hannover<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: +49 511 85622-0<br>     Selbstzahler: ja<br>     Preisinfo: abhängig vom Test<br>     <a href='https://www.labor-limbach-hannover.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_e5d369d140914ed162f3478869a3f6f4.setContent(html_9c740830d72c838016ade4beeb479760);
+            
+        
+
+        marker_33ce4670fddd059a42e0f0bbd760c87e.bindPopup(popup_e5d369d140914ed162f3478869a3f6f4)
+        ;
+
+        
+    
+    
+                marker_33ce4670fddd059a42e0f0bbd760c87e.setIcon(icon_17928b4486eca2f2509e3a23abaefa99);
+            
+    
+            var marker_6900fb6fc181a1b897b16c4eb1860d71 = L.marker(
+                [51.5322, 9.9025],
+                {
+}
+            ).addTo(marker_cluster_19e0dfc9376082a66f29d0e45d33e324);
+        
+    
+            var icon_158dc77e3a4b5004d436c01ad978e8d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0806f3b635aed61f3d24b82e0541f0c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f270027be5232fe765030638d777db29 = $(`<div id="html_f270027be5232fe765030638d777db29" style="width: 100.0%; height: 100.0%;">     <b>MVZ Göttingen</b><br>     Kategorie: Blutlabor<br>     Adresse: Kasseler Landstraße 25a 37081 Göttingen<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 0551 99 888 55 ,  0551 99 888 62<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     <a href='https://www.mvz-goettingen.de/' target='_blank' rel='noreferrer'>Website</a></div>`)[0];
+                popup_d0806f3b635aed61f3d24b82e0541f0c.setContent(html_f270027be5232fe765030638d777db29);
+            
+        
+
+        marker_6900fb6fc181a1b897b16c4eb1860d71.bindPopup(popup_d0806f3b635aed61f3d24b82e0541f0c)
+        ;
+
+        
+    
+    
+                marker_6900fb6fc181a1b897b16c4eb1860d71.setIcon(icon_158dc77e3a4b5004d436c01ad978e8d7);
+            
+    
+            var marker_02aa286e3d21c9b43f6e93c9de043a6e = L.marker(
+                [51.7002, 9.9959],
+                {
+}
+            ).addTo(marker_cluster_19e0dfc9376082a66f29d0e45d33e324);
+        
+    
+            var icon_2cbed9b13cde19e59545ce2421f745d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31d6a1f72b66dcc83256a8090fc71b5e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f43692bf3bec7fb83df2d6178a7ffe0b = $(`<div id="html_f43692bf3bec7fb83df2d6178a7ffe0b" style="width: 100.0%; height: 100.0%;">     <b>MVZ Northeim</b><br>     Kategorie: Blutlabor<br>     Adresse: Sturmbäume 3 37154 Northeim<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 05551 8595<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_31d6a1f72b66dcc83256a8090fc71b5e.setContent(html_f43692bf3bec7fb83df2d6178a7ffe0b);
+            
+        
+
+        marker_02aa286e3d21c9b43f6e93c9de043a6e.bindPopup(popup_31d6a1f72b66dcc83256a8090fc71b5e)
+        ;
+
+        
+    
+    
+                marker_02aa286e3d21c9b43f6e93c9de043a6e.setIcon(icon_2cbed9b13cde19e59545ce2421f745d1);
+            
+    
+            var marker_10bf8fbf836a64ba9260a4534f15ce31 = L.marker(
+                [51.72868, 10.24812],
+                {
+}
+            ).addTo(marker_cluster_19e0dfc9376082a66f29d0e45d33e324);
+        
+    
+            var icon_c98a671b3940232f093bb939a85fd610 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89dbd8babdeddb8513ab6f25ff2c2537 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_20eb3cdb31490160755b2bc9cd2d709b = $(`<div id="html_20eb3cdb31490160755b2bc9cd2d709b" style="width: 100.0%; height: 100.0%;">     <b>MVZ Osterode</b><br>     Kategorie: Blutlabor<br>     Adresse: Bahnhofstraße 2 37520 Osterode am Harz<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 05522 3444<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_89dbd8babdeddb8513ab6f25ff2c2537.setContent(html_20eb3cdb31490160755b2bc9cd2d709b);
+            
+        
+
+        marker_10bf8fbf836a64ba9260a4534f15ce31.bindPopup(popup_89dbd8babdeddb8513ab6f25ff2c2537)
+        ;
+
+        
+    
+    
+                marker_10bf8fbf836a64ba9260a4534f15ce31.setIcon(icon_c98a671b3940232f093bb939a85fd610);
+            
+    
+            var marker_714f11073c8e8f465bee2fe67eef71fd = L.marker(
+                [51.6597, 9.6385],
+                {
+}
+            ).addTo(marker_cluster_19e0dfc9376082a66f29d0e45d33e324);
+        
+    
+            var icon_02e6ed160180b539943ab8fe3a54d4b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0e99a7049a996e2a88269112b93febc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4779c0cf019a0dc28ed066412af92299 = $(`<div id="html_4779c0cf019a0dc28ed066412af92299" style="width: 100.0%; height: 100.0%;">     <b>MVZ Urslar</b><br>     Kategorie: Blutlabor<br>     Adresse: Eichhagen 2–4 37170 Uslar<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 05571 8019977<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_f0e99a7049a996e2a88269112b93febc.setContent(html_4779c0cf019a0dc28ed066412af92299);
+            
+        
+
+        marker_714f11073c8e8f465bee2fe67eef71fd.bindPopup(popup_f0e99a7049a996e2a88269112b93febc)
+        ;
+
+        
+    
+    
+                marker_714f11073c8e8f465bee2fe67eef71fd.setIcon(icon_02e6ed160180b539943ab8fe3a54d4b2);
+            
+    
+            var marker_545936d71c2c4090ba2b45872c9aec10 = L.marker(
+                [52.3759, 9.732],
+                {
+}
+            ).addTo(marker_cluster_19e0dfc9376082a66f29d0e45d33e324);
+        
+    
+            var icon_468fb1a82bc835039c72325e386a080c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8ddd4614b53b291f0f9bf6568bd82f1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_84a35cd9b0024aa75e6d9eefb0a862dc = $(`<div id="html_84a35cd9b0024aa75e6d9eefb0a862dc" style="width: 100.0%; height: 100.0%;">     <b>MVZ wagnerstibbe (amedes)</b><br>     Kategorie: Blutlabor<br>     Adresse: Georgstraße 50 30159 Hannover<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 0511 30 17 95 0,  0511 30 17 95 119<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_f8ddd4614b53b291f0f9bf6568bd82f1.setContent(html_84a35cd9b0024aa75e6d9eefb0a862dc);
+            
+        
+
+        marker_545936d71c2c4090ba2b45872c9aec10.bindPopup(popup_f8ddd4614b53b291f0f9bf6568bd82f1)
+        ;
+
+        
+    
+    
+                marker_545936d71c2c4090ba2b45872c9aec10.setIcon(icon_468fb1a82bc835039c72325e386a080c);
+            
+    
+            var marker_01ba021a9d280f919eab80bf9bd57361 = L.marker(
+                [51.4522, 7.0126],
+                {
+}
+            ).addTo(marker_cluster_19e0dfc9376082a66f29d0e45d33e324);
+        
+    
+            var icon_0c447abe19306b672de52a17d0b760ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c5946cca05a6ed6a5536a62b1c9f9e0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_74c6401e72093aa179bf3ca9c3996def = $(`<div id="html_74c6401e72093aa179bf3ca9c3996def" style="width: 100.0%; height: 100.0%;">     <b>MVZ Institut für Labormedizin und Klinische Genetik (amedes)</b><br>     Kategorie: Blutlabor<br>     Adresse: Rhein/Ruhr GmbH Willy-Brandt-Platz 4 45127 Essen<br>     Leistungen: Blutuntersuchungen<br>     Kontakt: 0201 74 77 60, 0201 74 77 690<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_6c5946cca05a6ed6a5536a62b1c9f9e0.setContent(html_74c6401e72093aa179bf3ca9c3996def);
+            
+        
+
+        marker_01ba021a9d280f919eab80bf9bd57361.bindPopup(popup_6c5946cca05a6ed6a5536a62b1c9f9e0)
+        ;
+
+        
+    
+    
+                marker_01ba021a9d280f919eab80bf9bd57361.setIcon(icon_0c447abe19306b672de52a17d0b760ba);
+            
+    
+            var marker_8815d2fdcd099fdb7569ae0944e319ce = L.marker(
+                [51.496, 11.992],
+                {
+}
+            ).addTo(marker_cluster_19e0dfc9376082a66f29d0e45d33e324);
+        
+    
+            var icon_40a0b20591191f552466c73734064400 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce6f29b0b110238afb3804e6c7633a5a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f68f32d9f94cf67f0f06c9c673e18390 = $(`<div id="html_f68f32d9f94cf67f0f06c9c673e18390" style="width: 100.0%; height: 100.0%;">     <b>amedes MVZ für Laboratoriums-diagnostik und Mikrobiologie Halle/Leipzig GmbH</b><br>     Kategorie: Blutlabor<br>     Adresse: Leipziger Chaussee 191f 06112 Halle<br>     Leistungen: Blutuntersuchungen<br>     Kontakt:  0345 445 07 100, 0345 445 07 210<br>     Selbstzahler: ja<br>     Preisinfo: nicht öffentlich<br>     </div>`)[0];
+                popup_ce6f29b0b110238afb3804e6c7633a5a.setContent(html_f68f32d9f94cf67f0f06c9c673e18390);
+            
+        
+
+        marker_8815d2fdcd099fdb7569ae0944e319ce.bindPopup(popup_ce6f29b0b110238afb3804e6c7633a5a)
+        ;
+
+        
+    
+    
+                marker_8815d2fdcd099fdb7569ae0944e319ce.setIcon(icon_40a0b20591191f552466c73734064400);
+            
+    
+            var layer_control_e9ce12941c6ebfcc197f57f7de5bd94a_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3e891abc8688ecece066c57597158b7f,
+                },
+                overlays :  {
+                    "Alles zusammen" : marker_cluster_b72c1af13b2ae145e23030b1195fe6a1,
+                    "Knochenmessung" : marker_cluster_6daabef926c8abb54f9c0c45dd9560bf,
+                    "Body composition" : marker_cluster_bb1671428b4915a8eab7dd34923b35cb,
+                    "Beide" : marker_cluster_f87e270a43cdb5a49712a07334aaeb77,
+                    "Blutlabor nur (Selbstzahler)" : marker_cluster_19e0dfc9376082a66f29d0e45d33e324,
+                },
+            };
+            let layer_control_e9ce12941c6ebfcc197f57f7de5bd94a = L.control.layers(
+                layer_control_e9ce12941c6ebfcc197f57f7de5bd94a_layers.base_layers,
+                layer_control_e9ce12941c6ebfcc197f57f7de5bd94a_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_ca021805274b783c11766dce5f04bb13);
+
+        
+    
+            map_ca021805274b783c11766dce5f04bb13.fitBounds(
+                [[48.9432, 6.9084], [53.6486, 13.37821]],
+                {}
+            );
+        
+</script>
+</html>
