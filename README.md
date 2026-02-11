@@ -30,8 +30,11 @@ Mittels fit_bounds(), um alle Standorte optimal darzustellen
 2.4 MarkerCluster:
 Zur Gruppierung nahegelegener Standorte
 
-    Farbcodierung:
+    
+Farbcodierung:
+
       Blau: DEXA
+      
       Rot: Blutlabor
 
 Popup-Informationen:
@@ -69,7 +72,7 @@ Das Image wurde getaggt und in Docker Hub gepusht, damit es überall verwendet w
  Windows PowerShell : docker run --rm -v "${PWD}:/app" tanaebou/laboresuchedach:latest
 
  4.3 Nach dem Lauf wird die Datei: standorte_karte.html
- 
+
 
 
 5. Open the map
@@ -93,7 +96,9 @@ Dockerisierung, um reproduzierbare und plattformunabhängige Ausführung sicherz
 7. Was ich bei mehr Zeit noch verbessern würde:
 
 Integration einer Suchfunktion für eine noch bessere Nutzerinteraktion.
+
 Vollautomatisiertes, nachhaltiges Data-Scraping.
+
 Erweiterung um weitere Filterfunktionen, z. B. nach Leistungsangeboten oder Öffnungszeiten.
 
 
